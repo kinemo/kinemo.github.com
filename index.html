@@ -12,8 +12,19 @@
 	
 	<script> 
 	$(document).ready(function(){
-	$("button.toggle").click(function(){
-	$("p.toggle").toggle();
+	var x = true;
+	$("button.meh").click(function(){
+     if (x==true){
+	 $("section.snack").css('visibility','hidden');
+	 x = false;
+	 }
+	else {
+	$("section.snack").css('visibility','visible');
+	x = true;
+	
+	}
+	
+
 	});
 	});
 	
@@ -41,9 +52,22 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-		  <section class="toggle">
-		  <button class="toggle">Heoo</button>
-		  <p class="toggle">Where did the wizi go?</p>
+		  <section class="meh">
+		  <button class="meh">Heoo</button>
+		  <section class="snack"> <h3> hide &#38; show</h3>
+		  <p> jag testade; hide &#38; show men även toggle, <br> märke att den bröt flöden, det blev ett tomrum <br> när man använde sig av detta, vilket gjorde att sidan flyttade på sig
+		  <br><br> jag ville få att platsen som blev "hidden" inte skulle tappa <br>
+		  sin plats, så jag kollade på nätet och hittade denna tråden:
+		  <br> <a href="http://stackoverflow.com/questions/4911577/jquery-click-toggle-between-two-functions">This</a>
+		  och fick då tips om att ändra css taggen till "hidden" för att <br>
+		  inte förstöra flödet, men många av de exemple är till gamla, eller utomstående filer <br>
+		  förstår inte även alla till 100%, men gav iden om att använda sig av if/else sats <br>
+		  vilket jag tog till nytta av och använder i denna. &#x262F;
+		  
+		  
+		  </p>
+		  
+		  Where did the wizi go?</section>
 		  
 		  </section>
 
