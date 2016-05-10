@@ -27,6 +27,22 @@
 
 	});
 	});
+$(document).ready(function(){
+	$("button.bt-one").click(function(){
+$(".two, .three, .four").css('visiblity','hidden');
+$(".one").css('visibility','visible');
+	
+
+	});
+	});
+	$(document).ready(function(){
+	$("button.bt-two").click(function(){
+$(".one, .three , .four").css('visiblity','hidden');
+$(".two").css('visibility','visible');
+	
+
+	});
+	});
 	
 	</script>
 	
@@ -78,10 +94,10 @@
 	<div class="page two"> THIS IS PAGE 2</div>
 	<div class="page three"> <em>this is page 3</em></div>
 	<div class="page four"><strong> this is page 4</strong></div>
-	<button class="one this">one</button>
-	<button class="two this">two</button>
-	<button class="three this">three</button>
-	<button class="four this">four</button>
+	<button class="bt-one this">one</button>
+	<button class="bt-two this">two</button>
+	<button class="bt-three this">three</button>
+	<button class="bt-four this">four</button>
 	</div>
 	</div>
 

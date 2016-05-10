@@ -441,15 +441,19 @@ min-heigh:300px;
 }
 .one  {
  z-index: 1;
+
 }
 .two  {
- z-index:2
+ z-index:2;
+
 }
 .three {
  z-index:3;
+
 }
 .four  {
  z-index: 4;
+
 }
 .this {
 	margin-top:30px;
