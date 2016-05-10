@@ -437,27 +437,33 @@ min-heigh:300px;
 .page {
 	position:absolute;
 	display:inline-block;
+	min-height:400px;
 	
 }
 .one  {
- z-index: 1;
+
 
 }
 .two  {
- z-index:2;
 
+visibility:hidden;
 }
 .three {
- z-index:3;
 
+visibility:hidden;
 }
 .four  {
- z-index: 4;
 
+visibility:hidden
 }
 .this {
 	margin-top:30px;
 	display:inline-block;
 	
+	
+}
+.buttons{
+	clear:both;
+	margin-left:40%;
 	
 }

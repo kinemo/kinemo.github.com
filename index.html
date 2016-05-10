@@ -27,25 +27,42 @@
 
 	});
 	});
-$(document).ready(function(){
+	$(document).ready(function(){
 	$("button.bt-one").click(function(){
-$(".two, .three, .four").css('visiblity','hidden');
-$(".one").css('visibility','visible');
+$("div.page").css('visibility','hidden');
+$("div.one").css('visibility','visible');
 	
 
 	});
 	});
 	$(document).ready(function(){
 	$("button.bt-two").click(function(){
-$(".one, .three , .four").css('visiblity','hidden');
+$(".page").css('visibility','hidden');
 $(".two").css('visibility','visible');
 	
 
 	});
 	});
+	$(document).ready(function(){
+	$("button.bt-three").click(function(){
+$("div.page").css('visibility','hidden')
+$("div.three").css('visibility','visible')
+	
+
+	});
+	});
+		$(document).ready(function(){
+	$("button.bt-four").click(function(){
+$("div.page").css('visibility','hidden')
+$("div.four").css('visibility','visible')
+
+	});
+	});
 	
 	</script>
-	
+	<!-- i had made a mistake visblity => visibility fixed it
+i had made a spelling error, at first, and fixed it so it works now.
+	-->
 	
   </head>
 
@@ -90,14 +107,29 @@ $(".two").css('visibility','visible');
       </section>
     
 	<div class="parent inner">
-	<div class="page one"> <p> this is page 1</p></div>
-	<div class="page two"> THIS IS PAGE 2</div>
-	<div class="page three"> <em>this is page 3</em></div>
-	<div class="page four"><strong> this is page 4</strong></div>
+	<div class="page one meow"> this is page 1 and it is gloriuos
+	<button class="bt-two">&#x21E8;</button>
+	</div>
+	<div class="page two"> THIS IS PAGE 2 and it is glorius
+	<button class="bt-one">&#x21E6;</button>
+	<button class="bt-three">&#x21E8;</button>
+	</div>
+	<div class="page three meow"> <em>this is page 3 and i shall rise</em>
+		<button class="bt-two">&#x21E6;</button>
+	<button class="bt-four">&#x21E8;</button>
+	</div>
+	<div class="page four meow"><strong> this is page 4 and this is last</strong>
+		<button class="bt-three">&#x21E6;</button>
+	<button class="bt-one">&#x21ba;</button>
+	<!--  this is for the arrows.
+	http://www.w3schools.com/charsets/ref_utf_arrows.asp -->
+	</div>
+	<div class="buttons">
 	<button class="bt-one this">one</button>
 	<button class="bt-two this">two</button>
 	<button class="bt-three this">three</button>
 	<button class="bt-four this">four</button>
+	</div>
 	</div>
 	</div>
 
