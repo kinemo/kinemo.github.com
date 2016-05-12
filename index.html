@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 <script src="javascripts/jquery-2.2.3.min.js"></script>
+<script src="javascripts/timer.jquery.js"></script>
     <title>Kinemo's Personal fun</title>
 	
 	<script> 
@@ -21,10 +22,16 @@
 	else {
 	$("section.snack").css('visibility','visible');
 	x = true;
-	
+		}
+	});
+	});
+	$(document).ready(function(){
+	$("button.meh").timer({
+	duration: '0m10s',
+	callback: function() {
+	$("section.snack").css('color','red');
 	}
 	
-
 	});
 	});
 	$(document).ready(function(){
