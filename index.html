@@ -25,15 +25,7 @@
 		}
 	});
 	});
-	$(document).ready(function(){
-	$("button.meh").timer({
-	duration: '0m10s',
-	callback: function() {
-	$("section.snack").css('color','red');
-	}
 	
-	});
-	});
 	$(document).ready(function(){
 	$("button.bt-one").click(function(){
 $("div.page").css('visibility','hidden');
@@ -65,7 +57,11 @@ $("div.four").css('visibility','visible')
 
 	});
 	});
-	
+	$(window).load(function(){
+	$setInterval(function(){
+	alert("test");
+	}, 2000);
+	});
 	</script>
 	<!-- i had made a mistake visblity => visibility fixed it
 i had made a spelling error, at first, and fixed it so it works now.
