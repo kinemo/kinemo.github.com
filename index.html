@@ -110,28 +110,43 @@ i had made a spelling error, at first, and fixed it so it works now.
       </section>
 
 	<div class="parent inner">
-	<div class="page one meow"> this is page 1 and it is gloriuos
-	<button class="bt-two">&#x21E8;</button>
+	<div class="page one meow"> this is page 1 and it is gloriuos<br>
+    <h5>Kommentar</h3>
+    jag kom ihåg att bootstrap hade en funktion att skapa flera "sidor" på en sida
+    och undrade ifall jag kan göra samma sak, med hjälp av
+    visibility hidden > visibile berode på vilken "sida/låda" jag ville visa
+    <br>
+    Detta blev då ett försök att göra med hjälp av att stapla
+    div påvarandra och göra de andra förutom de första till visibility hidden
+    så att de inte "syns" på sidan.
+    <br>
+    <h6>byt sida</h6>
+	<br><button class="bt-two">&#x21E8;</button>
 	</div>
-	<div class="page two"> THIS IS PAGE 2 and it is glorius
-	<button class="bt-one">&#x21E6;</button>
+	<div class="page two"> THIS IS PAGE 2 and it is glorius<br>
+    <br>
+    jag stötte på ett problem när jag gjorde detta var att jag behövde ha 2 funktioner
+    i knappen som kallar till funktionen, en som gjorde sidan jag ville se synlig,
+    och de andra till osynliga igen, det var där jag gjorde ett stavfel med att jag trodde
+    att jag använde mig av notepad++ stavning när jag skrev visibility > hidden hade jag
+    glömt ett I i visibility så att det blev visibilty och fungerade då inte.
+    jag var säker på att stavning inte var fel, då jag råkat ut för detta innan,
+    så jag letade upp olika saker på nätet, men det visade sig i slutet vara ett stavfel.
+    Som jag har gjort, igen.
+	<br><button class="bt-one">&#x21E6;</button>
 	<button class="bt-three">&#x21E8;</button>
 	</div>
 	<div class="page three meow"> <em>this is page 3 and i shall rise</em>
-		<button class="bt-two">&#x21E6;</button>
+		<br><button class="bt-two">&#x21E6;</button>
 	<button class="bt-four">&#x21E8;</button>
 	</div>
 	<div class="page four meow"><strong> this is page 4 and this is last</strong>
-		<button class="bt-three">&#x21E6;</button>
+		<br><button class="bt-three">&#x21E6;</button>
 	<button class="bt-one">&#x21ba;</button>
 	<!--  this is for the arrows.
 	http://www.w3schools.com/charsets/ref_utf_arrows.asp -->
 	</div>
 	<div class="buttons">
-	<button class="bt-one this">one</button>
-	<button class="bt-two this">two</button>
-	<button class="bt-three this">three</button>
-	<button class="bt-four this">four</button>
 	</div>
 	</div>
 	</div>
@@ -139,7 +154,11 @@ i had made a spelling error, at first, and fixed it so it works now.
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a>        <button class="bt-one this">one</button>
+              	<button class="bt-two this">two</button>
+              	<button class="bt-three this">three</button>
+              	<button class="bt-four this">four</button></p>
+
       </footer>
     </div>
 
