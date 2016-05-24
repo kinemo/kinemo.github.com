@@ -426,21 +426,30 @@ Small Device Styles
 .meh {
 	float:left;
 	max-width:60%;
-	
+  display:block;
+
 }
 .outer {
 	display:inline-block;
 }
 .parent {
-min-heigh:300px;
+min-height:300px;
+float:right;
+margin-right: 15%;
 }
 .page {
 	position:absolute;
 	display:inline-block;
 	min-height:400px;
-	
+
 }
-.one  {
+button.meh{
+float:clear;
+margin:auto;
+
+}
+.snack {
+margin-top: 15px;
 
 
 }
@@ -459,11 +468,11 @@ visibility:hidden
 .this {
 	margin-top:30px;
 	display:inline-block;
-	
-	
+
+
 }
 .buttons{
 	clear:both;
-	margin-left:40%;
-	
+margin-top: 25px;
+
 }
