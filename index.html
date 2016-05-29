@@ -57,8 +57,8 @@ $("div.four").css('visibility','visible')
 
 	});
 	});
-	$(window).load(function(){
-	$setInterval(function(){
+	$(document).ready(function(){
+	setTimeout(function(){
 	alert("test");
 	}, 2000);
 	});
@@ -127,16 +127,28 @@ i had made a spelling error, at first, and fixed it so it works now.
     <br>
     jag stötte på ett problem när jag gjorde detta var att jag behövde ha 2 funktioner
     i knappen som kallar till funktionen, en som gjorde sidan jag ville se synlig,
-    och de andra till osynliga igen, det var där jag gjorde ett stavfel med att jag trodde
-    att jag använde mig av notepad++ stavning när jag skrev visibility > hidden hade jag
-    glömt ett I i visibility så att det blev visibilty och fungerade då inte.
+    och de andra till osynliga igen, det var där jag gjorde ett stavfel då jag trodde
+    att jag hade användt mig av notepad++ rekommenderade stavning när jag skrev visibility > hidden.
+    men jag gjorde inte det.
+    Hade glömt ett I i visibility så att det blev visibilty och fungerade då inte.
     jag var säker på att stavning inte var fel, då jag råkat ut för detta innan,
     så jag letade upp olika saker på nätet, men det visade sig i slutet vara ett stavfel.
     Som jag har gjort, igen.
+    <br>
+    <strong>  nästa sida </strong>
 	<br><button class="bt-one">&#x21E6;</button>
 	<button class="bt-three">&#x21E8;</button>
 	</div>
-	<div class="page three meow"> <em>this is page 3 and i shall rise</em>
+	<div class="page three meow"> <em>this is page 3 </em>
+    jag tittade även efter en timer, på funktionerna och försökte då hitat en i jquery.
+    Fast då jag inte hittade det utan fick bara en massa referenser till JavaScript, så försökte jag forsätta leta vidare
+    det var inte efter en tag jag forstod att det inte finns en direkt jquery funktion för detta, då funktionen var så simple i
+    JavaScript, det var helt enkelt bara skriva setTimeout(funktion(){
+      <br>)};<br>
+      Då jag använde mig av document ready för att få funktionen att vänta tills
+      sidan hade laddat klart med hjälp av jquery
+
+
 		<br><button class="bt-two">&#x21E6;</button>
 	<button class="bt-four">&#x21E8;</button>
 	</div>
@@ -146,8 +158,6 @@ i had made a spelling error, at first, and fixed it so it works now.
 	<!--  this is for the arrows.
 	http://www.w3schools.com/charsets/ref_utf_arrows.asp -->
 	</div>
-	<div class="buttons">
-	</div>
 	</div>
 	</div>
 
@@ -155,10 +165,12 @@ i had made a spelling error, at first, and fixed it so it works now.
     <div id="footer_wrap" class="outer">
       <footer class="inner">
         <p>Published with <a href="https://pages.github.com">GitHub Pages</a>        <button class="bt-one this">one</button>
-              	<button class="bt-two this">two</button>
+                <div class="button">
+                <button class="bt-one this">one</button>
+                <button class="bt-two this">two</button>
               	<button class="bt-three this">three</button>
               	<button class="bt-four this">four</button></p>
-
+                </div>
       </footer>
     </div>
 
